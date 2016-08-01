@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gif_image"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@color/purple"/>
+
+    <TextView
+        android:id="@+id/url_gif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="4dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:layout_gravity="bottom"
+        android:ellipsize="end"
+        android:background="@color/overlayBackground"
+        />
+
+
+</FrameLayout>

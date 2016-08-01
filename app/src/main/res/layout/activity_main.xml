@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="gifapp.jsm.myapp.app.interview.jsmtech.gifapp.MainActivity">
+
+    <EditText
+        android:id="@+id/search_text"
+        android:layout_height="60dp"
+        android:hint="@string/Search"
+        android:drawableLeft="@mipmap/search"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/gray"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:scrollbars="vertical" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:indeterminate="false"
+        android:visibility="gone"
+        android:padding="5dp" />
+
+
+</LinearLayout>
+
+
